@@ -18,7 +18,10 @@
 #     # hash[:one] << "uno"
 #     # hash[:one] << "jjaa"
 #     # hash[:two] << "dos"
-# hash[:pinga]
-string = %(home\\cano)
-puts string.inspect
-puts string.length
+# # hash[:pinga]
+# string = %(home\\cano)
+# puts string.inspect
+# puts string.length
+
+symbols_as_strings = Symbol.all_symbols.map { |x| x.to_s }
+puts symbols_as_strings.inspect
